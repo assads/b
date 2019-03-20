@@ -55,16 +55,6 @@ class ProductReminder
                            'join_type' => 'inner'
                         )
                     ),
-                    new Bitrix\Main\Entity\ReferenceField(
-                        'BASKET',
-                        '\Bitrix\Sale\Internals\BasketTable',
-                        array(
-                           '=this.ID' => 'ref.FUSER_ID',
-                        ),
-                        array(
-                           'join_type' => 'inner'
-                        )
-                    ),
                 ),
             )
         );
